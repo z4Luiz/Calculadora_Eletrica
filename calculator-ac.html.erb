@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora Eletrica</title>
+  </head>
+  <body>
+    <h1>Calcular Área do Círculo</h1>
+    <form action="/ac" method="post">
+      <input type="text" name="diametro" placeholder="Diâmetro">
+      <input type="submit" value="Calcular">
+    </form>
+    <% if @result %>
+      <h2>Resultado: <%= @result %>m²</h2>
+    <% end %>
+  </body>
+</html>

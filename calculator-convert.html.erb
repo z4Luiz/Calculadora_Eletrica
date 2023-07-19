@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora Eletrica</title>
+  </head>
+  <body>
+    <h1>Conversão de Valores</h1>
+    <form action="/convert" method="post">
+      <input type="text" name="valor" placeholder="Número">
+      <select name="operator">
+        <option value="mili">Mili</option>
+        <option value="inteiro">Inteiro</option>
+      </select>
+      <input type="submit" value="Calcular">
+    </form>
+    <% if @result %>
+      <h2>Resultado: <%= @result %></h2>
+    <% end %>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora Eletrica</title>
+  </head>
+  <body>
+    <h1>Calcular Corrente</h1>
+    <form action="/i" method="post">
+      <input type="text" name="num1" placeholder="Tensão">
+      <input type="text" name="num2" placeholder="Resistência">
+      <input type="submit" value="Calcular">
+    </form>
+    <% if @result %>
+      <h2>Resultado: <%= @result %>A</h2>
+    <% end %>
+  </body>
+</html>
